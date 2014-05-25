@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Title Page</title>
+		<meta charset="UTF-8">
+		<meta name=description content="">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
+		<!-- Bootstrap CSS -->
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<style>
+		h1 {
+			font-size: 80px;
+			font-weight: 100;
+		}
+		h1, div {
+			font-family: 'Roboto', sans-serif;
+			color: #FFF;
+
+		}
+		.counter {
+		    clear: both;
+		    display: block;
+		}
+		body {
+			padding: 50px;
+			background-image: url(bg.jpg);
+			background-size: cover;
+		}
+		.cd > div {
+		    display: inline-block;
+		    font-size: 50px;
+		    margin: 30px 50px;
+		    width: 150px;
+		    text-shadow: 0 0 5px #222;
+		}
+		div {			
+		    text-align: center;
+		}
+		.progress {
+			box-shadow: 0 0 5px 0 #000;
+		}
+		.progress-bar {
+			margin: 0;
+		}
+		</style>
+	</head>
+	<body>
+		<h1 style="text-align: center;">Hello World</h1>
+		<div class="cd"><br></div>
+
+		<div class="progress progress-striped active">
+		  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+		    <span class="sr-only"></span>
+		  </div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script src="https://rawgit.com/eAdnan007/jquery-countdown/master/jquery.countdown.min.js"></script>
+		<script>
+		$('.cd').countdown({
+			end_time: '2016-10-25T21:15+06:00',
+			start_time: '2013-05-25T21:43+06:00',
+			progress: $('.progress .progress-bar')			
+		});
+		</script>
+	</body>
+</html>
